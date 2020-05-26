@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>surgical_masks (149).jpg</filename>
+	<path>C:\Users\yifan\Documents\Tensorflow Models\workspace\training_demo\images\surgical_masks (149).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3500</width>
+		<height>2333</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>surgical</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1175</xmin>
+			<ymin>1051</ymin>
+			<xmax>1753</xmax>
+			<ymax>1493</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,19 @@
+item {
+    id: 1
+    name: 'homemade'
+}
+
+item {
+    id: 2
+    name: 'surgical'
+}
+
+item {
+    id: 3
+    name: 'n95'
+}
+
+item {
+    id: 4
+    name: 'bare'
+}
