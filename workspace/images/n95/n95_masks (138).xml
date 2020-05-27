@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>n95_masks (138).jpg</filename>
+	<path>C:\Users\yifan\Documents\Tensorflow Models\workspace\training_demo\images\n95_masks (138).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1748</width>
+		<height>2048</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>n95</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>409</xmin>
+			<ymin>681</ymin>
+			<xmax>617</xmax>
+			<ymax>838</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>n95</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1153</xmin>
+			<ymin>572</ymin>
+			<xmax>1322</xmax>
+			<ymax>751</ymax>
+		</bndbox>
+	</object>
+</annotation>

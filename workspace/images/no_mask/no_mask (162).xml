@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>no_mask (162).jpg</filename>
+	<path>C:\Users\yifan\Documents\Tensorflow Models\workspace\training_demo\images\no_mask (162).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>366</width>
+		<height>470</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bare</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>161</xmin>
+			<ymin>152</ymin>
+			<xmax>207</xmax>
+			<ymax>182</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bare</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>234</xmin>
+			<ymin>121</ymin>
+			<xmax>277</xmax>
+			<ymax>155</ymax>
+		</bndbox>
+	</object>
+</annotation>
