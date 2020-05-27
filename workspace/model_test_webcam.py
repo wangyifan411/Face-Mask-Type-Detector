@@ -18,9 +18,9 @@ cap = cv2.VideoCapture(0)
 import sys
 import os
 HomePath = os.path.expanduser('~')
-model_path = os.path.join(HomePath, 'Documents','Tensorflow_Models','models', 'research')
-slim_path =  os.path.join(HomePath, 'Documents','Tensorflow_Models','models', 'research', 'slim')
-object_detection_path =  os.path.join(HomePath, 'Documents','Tensorflow_Models','models', 'research', 'object_detection')
+model_path = os.path.join(HomePath, 'Documents', 'Tensorflow_Models', 'models', 'research')
+slim_path = os.path.join(HomePath, 'Documents', 'Tensorflow_Models', 'models', 'research', 'slim')
+object_detection_path = os.path.join(HomePath, 'Documents', 'Tensorflow_Models', 'models', 'research', 'object_detection')
 
 print(model_path)
 sys.path.append(model_path)
@@ -38,25 +38,25 @@ from utils import label_map_util
 from utils import visualization_utils as vis_util
 
 
-# # Model preparation 
+# # Model preparation
 
 # ## Variables
-# 
-# Any model exported using the `export_inference_graph.py` tool can be loaded here simply by changing `PATH_TO_CKPT` to point to a new .pb file.  
-# 
+#
+# Any model exported using the `export_inference_graph.py` tool can be loaded here simply by changing `PATH_TO_CKPT` to point to a new .pb file.
+#
 # By default we use an "SSD with Mobilenet" model here. See the [detection model zoo](https://github.com/tensorflow/models/blob/master/object_detection/g3doc/detection_model_zoo.md) for a list of other models that can be run out-of-the-box with varying speeds and accuracies.
 
 # In[4]:
 
 # What model to download.
 Model_dir = 'trained-inference-graphs'
-MODEL_NAME = 'output_inference_graph_v1.pb'
+MODEL_NAME = 'output_inference_graph_mobile.pb'
 
 # Path to frozen detection graph. This is the actual model that is used for the object detection.
-PATH_TO_CKPT = os.path.join(HomePath, 'Documents','Tensorflow_Models','workspace','training_demo', Model_dir, MODEL_NAME, 'frozen_inference_graph.pb')
+PATH_TO_CKPT = os.path.join(HomePath, 'Documents', 'Face-Mask-Type-Detector', 'workspace', Model_dir, MODEL_NAME, 'frozen_inference_graph.pb')
 
 # List of the strings that is used to add correct label for each box.
-PATH_TO_LABELS = os.path.join(HomePath, 'Documents','Tensorflow_Models','workspace','training_demo','annotations', 'label_map.pbtxt')
+PATH_TO_LABELS = os.path.join(HomePath, 'Documents', 'Face-Mask-Type-Detector', 'workspace', 'annotations', 'label_map.pbtxt')
 
 NUM_CLASSES = 4
 
@@ -69,9 +69,9 @@ NUM_CLASSES = 4
 # opener.retrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
 # tar_file = tarfile.open(MODEL_FILE)
 # for file in tar_file.getmembers():
-  # file_name = os.path.basename(file.name)
-  # if 'frozen_inference_graph.pb' in file_name:
-    # tar_file.extract(file, os.getcwd())
+# file_name = os.path.basename(file.name)
+# if 'frozen_inference_graph.pb' in file_name:
+# tar_file.extract(file, os.getcwd())
 
 
 # ## Load a (frozen) Tensorflow model into memory.
@@ -116,7 +116,7 @@ def load_image_into_numpy_array(image):
 # image2.jpg
 # If you want to test the code with your images, just add path to the images to the TEST_IMAGE_PATHS.
 PATH_TO_TEST_IMAGES_DIR = 'test_images'
-TEST_IMAGE_PATHS = [ os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i)) for i in range(1, 3) ]
+TEST_IMAGE_PATHS = [os.path.join(PATH_TO_TEST_IMAGES_DIR, 'image{}.jpg'.format(i)) for i in range(1, 3)]
 
 # Size, in inches, of the output images.
 IMAGE_SIZE = (12, 8)
@@ -152,7 +152,7 @@ with detection_graph.as_default():
           use_normalized_coordinates=True,
           line_thickness=8)
 
-      cv2.imshow('object detection', cv2.resize(image_np, (800,600)))
+      cv2.imshow('object detection', cv2.resize(image_np, (800, 600)))
       if cv2.waitKey(25) & 0xFF == ord('q'):
         cv2.destroyAllWindows()
         break
