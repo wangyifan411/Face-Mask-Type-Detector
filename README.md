@@ -51,5 +51,5 @@ The images used for training are from Google and Upslashe. There are 247, 197, 1
 ![Example2](/test_snapshots/face_mask_testing_1.png)
 
 
-- Test images from Raspberry Pi camera
+- Test images from a Raspberry Pi camera
 ![Example3](/test_snapshots/face_mask_testing_2.png)
