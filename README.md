@@ -13,7 +13,7 @@ The model is used to detect face masks of 4 classes: homemade cloth covers, surg
 - TensorFlow 1.10
 
 ### Training image examples
-The images used for training are from Google and Upslash. There are 247, 197, 184 and 255 images for each class. 
+The images used for training are from Google and Upslash and are not included here. There are 247, 197, 184 and 255 images for each class. 
 - homemade
 - surgical 
 - n95
